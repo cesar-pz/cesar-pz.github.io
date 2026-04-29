@@ -1,200 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  		<title>HOME</title>
-<!--
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth scrolling for a premium feel */
+        html { scroll-behavior: smooth; }
+        
+        /* Ensures images maintain aspect ratio in the grid */
+        .img-preview {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .img-preview:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
 
-Highway Template
-
-https://templatemo.com/tm-520-highway
-
--->
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-
-<body>
-
-    <div id="video-container">
-        <div class="video-overlay"></div>
-        <div class="video-content">
-            <div class="inner">
-              <h1><em>HOME</em></h1>
-              <p>😤</p>
-              <p>Home ft. Romans by Naughty Boy</p>
-                <div class="scroll-icon">
-                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
-                </div>
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter uppercase">ANAMIGO</h1>
+            <div class="space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#gallery" class="hover:text-gray-500">Gallery</a>
+                <a href="#curations" class="hover:text-gray-500">Curations</a>
             </div>
         </div>
-        <video autoplay="" loop="" muted>
-        	<source src="sintra.mp4" type="video/mp4" />
-        </video>
-    </div>
+    </nav>
 
+    <section id="gallery" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <a href="img/cactus_view-0620.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/cactus_view-0620.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/autumn-0946.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/autumn-0946.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/friends_big.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/friends_big.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/matteleaves-0963.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/matteleaves-0963.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/peak.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/peak.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/thinker.JPG" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/thinker.JPG" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/lookout-0426.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/lookout-0426.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/mitt-0930.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/mitt-0930.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/pseudotree-0961.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/pseudotree-0961.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/succ2-0922.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/succ2-0922.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/troll.JPG" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/troll.JPG" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/euca-0625.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/euca-0625.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/luck-0077.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/luck-0077.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/swirl-0970.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/swirl-0970.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                    <a href="img/upside-0674.jpg" target="_blank" class="block overflow-hidden bg-zinc-100">
+                        <img src="img/resized/upside-0674.jpg" alt="Photography" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity duration-300">
+                    </a>
+                </div>
+            </section>
+    </section>
 
-    <div class="full-screen-portfolio" id="portfolio">
-        <div class="container-fluid">
-          <div class="col-md-4 col-sm-6">
-              <div class="portfolio-item">
-                  <a href="img/stairs-0614.jpg" data-lightbox="image-1"><div class="thumb">
-                      <div class="image">
-                          <img src="img/small/stairs-0614.jpg">
-                      </div>
-                  </div></a>
-              </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/cats-0583.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/cats-0583.jpg">
-                        </div>
-                    </div></a>
-                </div>
+    <section id="curations" class="bg-gray-50 border-t border-gray-100 py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            
+            <div>
+                <h2 class="text-xs font-bold uppercase tracking-[0.3em] mb-8 text-gray-400">Song Recommendations</h2>
+                <ul class="space-y-4">
+                    <li class="flex flex-col">
+                        <span class="font-medium text-lg">1612</span>
+                        <span class="text-gray-500 text-sm">Vulfpeck</span>
+                    </li>
+                    <li class="flex flex-col border-t border-gray-200 pt-4">
+                        <span class="font-medium text-lg">Any Way (feat. Maggie Rogers)</span>
+                        <span class="text-gray-500 text-sm">L'Impératrice</span>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/growth-0600.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/growth-0600.jpg">
-                        </div>
-                    </div></a>
-                </div>
+
+            <div>
+                <h2 class="text-xs font-bold uppercase tracking-[0.3em] mb-8 text-gray-400">Movie Recommendations</h2>
+                <ul class="space-y-4">
+                    <li class="flex flex-col">
+                        <span class="font-medium text-lg">The Banshees of Inisherin</span>
+                        <span class="text-gray-500 text-sm">Dir. Martin McDonagh</span>
+                    </li>
+                    <li class="flex flex-col border-t border-gray-200 pt-4">
+                        <span class="font-medium text-lg">Eternal Sunshine of the Spotless Mind</span>
+                        <span class="text-gray-500 text-sm">Dir. Michel Gondry</span>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/door-0613.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/door-0613.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/side-view-0636.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/side-view-0636.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/monster-house-0631.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/monster-house-0631.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/cactus_view-0620.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/cactus_view-0620.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/euca-0625.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/euca-0625.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-            	<div class="portfolio-item">
-                	<a href="img/angle-0610.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/angle-0610.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/friends_big.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/friends.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/islands_big.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/islands.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/peak.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/peak.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/road-0638.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/road-0638.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/paws_bw-0563.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/paws_bw-0563.jpg">
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a href="img/my_door-0640.jpg" data-lightbox="image-1"><div class="thumb">
-                        <div class="image">
-                            <img src="img/small/my_door-0640.jpg">
-                        </div>
-                    </div></a>
-                </div>
+
         </div>
-    </div>
+    </section>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    <footer class="py-12 text-center text-xs text-gray-400 uppercase tracking-widest">
+        &copy; 2026 Cesar Hapaz. All rights reserved.
+    </footer>
 
 </body>
 </html>
